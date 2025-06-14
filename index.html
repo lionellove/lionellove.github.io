@@ -1,1 +1,24 @@
-Hello World
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线音频播放器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <h1>我的播放器</h1>
+        <audio id="audio-player" src="audio/song1.mp3"></audio>
+        
+        <div class="controls">
+            <button id="play-pause-btn">播放</button>
+            <input type="range" id="progress-bar" value="0" step="1">
+            <div id="time-display">00:00 / 00:00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
